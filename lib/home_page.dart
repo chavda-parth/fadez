@@ -199,232 +199,250 @@ class _HomePageState extends State<HomePage> {
       ),
     ];
     List<Widget> sections = <Widget>[
-      Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Our Shops Near You',
-                style: TextStyle(
-                  color: Theme.of(context).primaryColorDark,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'See All',
+      Container(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Our Shops Near You',
                   style: TextStyle(
-                      color: Color(0xff606060),
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700
+                    color: Theme.of(context).primaryColorDark,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
-              )
-            ],
-          ),
-          ShadowedContainer(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.asset('assets/images/shop1.png', height: MediaQuery.of(context).size.height * 0.12),
-                SizedBox(width: 12,),
-                Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Ellisville',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.location_on,
-                              color: Theme.of(context).primaryColorDark,
-                              size: 16,
-                            ),
-                            SizedBox(width: 4,),
-                            Expanded(
-                              child: Text(
-                                '1368 Clarkson Clayton Center, Ellisville, MO 63011',
-                                style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w500,
-                                    color: Color(0xff404040)
-                                ),
-                                softWrap: true,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See All',
+                    style: TextStyle(
+                        color: Color(0xff606060),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700
                     ),
                   ),
-                ),
+                )
               ],
             ),
-          ),
-          SizedBox(height: 16,),
-          ShadowedContainer(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.asset('assets/images/shop2.png', height: MediaQuery.of(context).size.height * 0.12),
-                SizedBox(width: 12,),
-                Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 4),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Burlington',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.location_on,
-                              color: Theme.of(context).primaryColorDark,
-                              size: 16,
-                            ),
-                            SizedBox(width: 4,),
-                            Expanded(
-                              child: Text(
-                                '201 Middlesex Turnpike, Burlington, MA 01803',
-                                style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w500,
-                                    color: Color(0xff404040)
-                                ),
-                                softWrap: true,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Offers',
-            style: TextStyle(
-              color: Theme.of(context).primaryColorDark,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          ShadowedContainer(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            Container(
+              child: Column(
                 children: [
-                  Expanded(
-                    child: Text(
-                      'Up to 60% OFF, Flat Discounts, and other great offers.',
-                      softWrap: true,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  ShadowedContainer(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/images/shop1.png', height: MediaQuery.of(context).size.height * 0.12),
+                        SizedBox(width: 12,),
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Ellisville',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on,
+                                      color: Theme.of(context).primaryColorDark,
+                                      size: 16,
+                                    ),
+                                    SizedBox(width: 4,),
+                                    Expanded(
+                                      child: Text(
+                                        '1368 Clarkson Clayton Center, Ellisville, MO 63011',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: Color(0xff404040)
+                                        ),
+                                        softWrap: true,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  Image.asset('assets/images/offers.png', height: MediaQuery.of(context).size.height * 0.08),
+                  SizedBox(height: 16,),
+                  ShadowedContainer(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/images/shop2.png', height: MediaQuery.of(context).size.height * 0.12),
+                        SizedBox(width: 12,),
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Burlington',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on,
+                                      color: Theme.of(context).primaryColorDark,
+                                      size: 16,
+                                    ),
+                                    SizedBox(width: 4,),
+                                    Expanded(
+                                      child: Text(
+                                        '201 Middlesex Turnpike, Burlington, MA 01803',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: Color(0xff404040)
+                                        ),
+                                        softWrap: true,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-            )
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
-      Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Popular Stylists',
-                style: TextStyle(
-                  color: Theme.of(context).primaryColorDark,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
+      Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Offers',
+              style: TextStyle(
+                color: Theme.of(context).primaryColorDark,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
               ),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'See All',
-                  style: TextStyle(
-                      color: Color(0xff606060),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700
-                  ),
+            ),
+            ShadowedContainer(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        'Up to 60% OFF, Flat Discounts, and other great offers.',
+                        softWrap: true,
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    Image.asset('assets/images/offers.png', height: MediaQuery.of(context).size.height * 0.08),
+                  ],
                 ),
               )
-            ],
-          ),
-          SingleChildScrollView(
-            clipBehavior: Clip.none,
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: stylists,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
-      Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Services',
-                style: TextStyle(
-                  color: Theme.of(context).primaryColorDark,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'See All',
+      Container(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Popular Stylists',
                   style: TextStyle(
-                      color: Color(0xff606060),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700
+                    color: Theme.of(context).primaryColorDark,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
-              )
-            ],
-          ),
-          SingleChildScrollView(
-            clipBehavior: Clip.none,
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: services,
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See All',
+                    style: TextStyle(
+                        color: Color(0xff606060),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700
+                    ),
+                  ),
+                )
+              ],
             ),
-          ),
-        ],
+            Container(
+              child: SingleChildScrollView(
+                clipBehavior: Clip.none,
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: stylists,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      Container(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Services',
+                  style: TextStyle(
+                    color: Theme.of(context).primaryColorDark,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See All',
+                    style: TextStyle(
+                        color: Color(0xff606060),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700
+                    ),
+                  ),
+                )
+              ],
+            ),
+            Container(
+              child: SingleChildScrollView(
+                clipBehavior: Clip.none,
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: services,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     ];
 
