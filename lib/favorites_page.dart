@@ -160,7 +160,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Image.asset(
-                                    'assets/images/stylist1.png',
+                                    'assets/images/stylist2.png',
                                     height: MediaQuery.of(context).size.height * 0.08,
                                   ),
                                 ),
@@ -170,7 +170,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Alex',
+                                    'Rehmaan',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
@@ -197,7 +197,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Image.asset(
-                                    'assets/images/stylist1.png',
+                                    'assets/images/cut1.png',
                                     height: MediaQuery.of(context).size.height * 0.08,
                                   ),
                                 ),
@@ -207,14 +207,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Alex',
+                                    'Classic',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                   Text(
-                                    'Stylist',
+                                    'Service',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500,
@@ -234,7 +234,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Image.asset(
-                                    'assets/images/stylist1.png',
+                                    'assets/images/cut2.png',
                                     height: MediaQuery.of(context).size.height * 0.08,
                                   ),
                                 ),
@@ -244,14 +244,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Alex',
+                                    'Beard Trim',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                   Text(
-                                    'Stylist',
+                                    'Service',
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500,
@@ -259,6 +259,138 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                     ),
                                   ),
                                 ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Recent Locations',
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColorDark,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Clear',
+                            style: TextStyle(
+                                color: Color(0xff606060),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w700
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ShadowedContainer(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Image.asset(
+                                    'assets/images/stylist1.png',
+                                    height: MediaQuery.of(context).size.height * 0.08,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 16,),
+                              Text(
+                                'Illinois',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ShadowedContainer(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Image.asset(
+                                    'assets/images/stylist1.png',
+                                    height: MediaQuery.of(context).size.height * 0.08,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 16,),
+                              Text(
+                                'Missouri',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ShadowedContainer(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Image.asset(
+                                    'assets/images/stylist1.png',
+                                    height: MediaQuery.of(context).size.height * 0.08,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 16,),
+                              Text(
+                                'Massachusetts',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ShadowedContainer(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Image.asset(
+                                    'assets/images/stylist1.png',
+                                    height: MediaQuery.of(context).size.height * 0.08,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 16,),
+                              Text(
+                                'London',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ],
                           ),
